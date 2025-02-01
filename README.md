@@ -4,7 +4,7 @@ This repository is a sample application for users following the getting started 
 
 The application is based on the application from the getting started tutorial at https://github.com/docker/getting-started
 
-Cloning the project : I cloned a project from the repository to work on the application in a Kubernetes environment.
+Cloning the project : I cloned the project "getting-started-app" from the repository to work on the application in a Kubernetes environment.
 
 Creating the Dockerfile : I wrote a Dockerfile to build the Docker image for the application. This file includes instructions to define the base image (here, node:18-alpine), add the project files, and install dependencies using yarn install.
 
