@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mon-appli-oc-service
+spec:
+  selector:
+    app: mon-appli-oc
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 3000
+  type: LoadBalancer

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mon-appli-oc
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: mon-appli-oc
+  template:
+    metadata:
+      labels:
+        app: mon-appli-oc
+    spec:
+      containers:
+        - name: mon-appli-oc
+          image: localhost:5000/ma_premiere_image
+          imagePullPolicy: Never  # Empêche Kubernetes de tenter de tirer l'image depuis un registre externe
+          ports:
+            - containerPort: 3000
